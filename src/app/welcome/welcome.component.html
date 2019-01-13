@@ -1,0 +1,57 @@
+<header>
+  <mat-toolbar color="primary">Strona główna</mat-toolbar>
+</header>
+<!--<img (click)="_toggleSidebar()" src="assets/hamburger.svg" class="float-left bg-warning">-->
+<div class="w-100 row">
+  <div class="container col-4 text-center float-left bg-dark m-0 p-0">
+    <ng-sidebar-container class="w-100" style="height: 100vh;">
+      <ng-sidebar [(opened)]="_opened" class="">
+        <div class="">
+          <h1 class="text-primary">Wydarzenia</h1>
+          <div ng-sidebar-content class="">
+            <ul class="row">
+              <li class="col-12 p-3">
+                <button class="btn btn-primary w-75" [routerLink]="['/welcome']">Strona główna</button>
+              </li>
+              <li class="col-12 p-3">
+                <button class="btn btn-primary w-75" [routerLink]="['/summer']">Summer Car Party</button>
+              </li>
+              <li class="col-12 p-3" >
+                <button class="btn btn-primary w-75" [routerLink]="['/american']">American Cars Mania</button>
+              </li>
+              <li class="col-12 p-3">
+                <button class="btn btn-primary w-75" [routerLink]="['/contact']">Kontakt</button>
+              </li>
+            </ul>
+
+
+
+
+          </div>
+        </div>
+
+      </ng-sidebar>
+    </ng-sidebar-container>
+  </div>
+
+  <!--<div class="container w-75 float-left text-center ">-->
+  <!--<h2>Galeria</h2>-->
+  <!--<ngx-gallery class="shadow-lg" [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>-->
+  <!--</div>-->
+
+  <div class="container col-8">
+    <div class="jumbotron m-3">
+      <h1 class="display-4">Witamy w świecie wszechobecnych spalin!</h1>
+      <p class="lead">Jeśli zapach benzyny o poranku to najlepsze co może Cię spotkać, jesteś we właściwym miejscu</p>
+      <hr class="my-4">
+      <p>Chcesz poinformować nas o wydarzeniu?</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" [routerLink]="['/contact']" role="button">Skontaktuj się z nami!</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<footer></footer>

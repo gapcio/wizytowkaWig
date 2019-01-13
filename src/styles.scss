@@ -3,3 +3,22 @@
 @import '~bootstrap/scss/bootstrap-grid';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+ul{
+  padding: 0;
+  margin: 0;
+  background: none;
+  list-style: none;
+}
+
+
+li :hover{
+  margin-left: 5vh;
+}
+.dol{
+  position: relative;
+  z-index: 100;
+}
+ngx-gallery{
+  position: relative;
+  z-index: 1000;
+}

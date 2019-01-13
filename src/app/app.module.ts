@@ -10,11 +10,20 @@ import {MatCardModule} from '@angular/material/card';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {HomeComponent} from "./home/home.component";
+import { WelcomeComponent } from './welcome/welcome.component';
+import {SidebarModule} from "ng-sidebar";
+import { SummerComponent } from './summer/summer.component';
+import { ContactComponent } from './contact/contact.component';
+import { AmericanComponent } from './american/american.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    WelcomeComponent,
+    SummerComponent,
+    ContactComponent,
+    AmericanComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +34,8 @@ import {HomeComponent} from "./home/home.component";
     MatIconModule,
     MatCardModule,
     BrowserAnimationsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    SidebarModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

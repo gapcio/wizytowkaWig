@@ -1,0 +1,114 @@
+<header>
+  <mat-toolbar color="primary">Kontakt</mat-toolbar>
+</header>
+<!--<img (click)="_toggleSidebar()" src="assets/hamburger.svg" class="float-left bg-warning">-->
+<div class="w-100 row">
+  <div class="container col-4 text-center float-left bg-dark m-0 p-0">
+    <ng-sidebar-container class="w-100" style="height: 100vh;">
+      <ng-sidebar [(opened)]="_opened" class="">
+        <div class="">
+          <h1 class="text-primary">Wydarzenia</h1>
+          <div ng-sidebar-content class="">
+            <ul class="row">
+              <li class="col-12 p-3">
+                <button class="btn btn-primary w-75" [routerLink]="['/welcome']">Strona główna</button>
+              </li>
+              <li class="col-12 p-3">
+                <button class="btn btn-primary w-75" [routerLink]="['/summer']">Summer Car Party</button>
+              </li>
+              <li class="col-12 p-3" >
+                <button class="btn btn-primary w-75" [routerLink]="['/american']">American Cars mania</button>
+              </li>
+              <li class="col-12 p-3">
+                <button class="btn btn-primary w-75" [routerLink]="['/contact']">Kontakt</button>
+              </li>
+            </ul>
+
+
+
+
+          </div>
+        </div>
+
+      </ng-sidebar>
+    </ng-sidebar-container>
+  </div>
+
+  <!--<div class="container w-75 float-left text-center ">-->
+  <!--<h2>Galeria</h2>-->
+  <!--<ngx-gallery class="shadow-lg" [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>-->
+  <!--</div>-->
+
+  <div class="container col-8 pt-5">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="well well-sm">
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">
+                    Imię i nazwisko</label>
+                  <input type="text" class="form-control" id="name" placeholder="Wprowadź imię i nazwisko" required="required" />
+                </div>
+                <div class="form-group">
+                  <label for="email">
+                    Adres e-mail</label>
+                  <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                    <input type="email" class="form-control" id="email" placeholder="Wprowadź e-mail" required="required" /></div>
+                </div>
+                <div class="form-group">
+                  <label for="subject">
+                    Rodzaj zgłoszenia</label>
+                  <select id="subject" name="subject" class="form-control" required="required">
+                    <option value="na" selected="">Wybierz jedno:</option>
+                    <option value="service">Zgłoś wydarzenie</option>
+                    <option value="suggestions">Uwagi odnośnie wydarzenia</option>
+                    <option value="product">Zażalenia/option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">
+                    Wiadomość</label>
+                  <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                            placeholder="Tutaj wpisz swoją wiadomość"></textarea>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                  Wyślij formularz</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <form>
+          <legend><span class="glyphicon glyphicon-globe"></span>Nasza siedziba</legend>
+          <address>
+            <strong>Car spots</strong><br>
+            Bagno<br>
+            Ul. Błotna<br>
+            Numer zachlapany<br>
+
+            <abbr title="Phone">
+              tel:</abbr>
+            +48 123 456 789
+          </address>
+          <address>
+            <strong>Nasz e-mail</strong><br>
+            <a href="mailto:#">nie.wysylaj@nic.nam</a>
+          </address>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer></footer>
